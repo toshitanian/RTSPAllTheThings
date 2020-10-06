@@ -83,7 +83,7 @@ std::string encode(std::shared_ptr<t_config> &config) {
   }
 
   if (needs_encoding(config)) {
-    launchCmd += " ! capsfilter ! queue ! x264enc speed-preset=superfast key-int-max=15";
+    launchCmd += " ! capsfilter ! queue ! x264enc speed-preset=superfast key-int-max=30";
   }
 
   return launchCmd;
